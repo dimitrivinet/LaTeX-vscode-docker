@@ -1,0 +1,10 @@
+
+{
+    "name": "latex-env",
+    "extensions": [
+        "james-yu.latex-workshop",
+        "actboy168.tasks"
+    ],
+    "dockerFile": "alpine.Dockerfile"
+    // "dockerFile": "debian.Dockerfile"  # caution: untested!
+}

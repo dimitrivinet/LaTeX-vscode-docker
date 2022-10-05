@@ -1,0 +1,11 @@
+*.zip
+
+# Compilation specific
+
+output/
+out/
+*.pdf
+
+*.log
+
+_minted-main
