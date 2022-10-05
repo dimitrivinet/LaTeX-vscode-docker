@@ -2,6 +2,10 @@
 
 Develop in LaTeX with VSCode and Docker. Minimal dependencies required.
 
+## Requirements
+
+- VSCode's Remote Containers extensions (ms-vscode-remote.remote-containers)
+
 ## Usage
 
 - Clone this repository and `cd` into the newly created folder, optionally renaming the destination folder:
