@@ -6,4 +6,15 @@
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.synctex.afterBuild.enabled": true,
     "latex-workshop.latex.autoBuild.run": "never",
+    "todo-tree.tree.scanMode": "workspace",
+    "todo-tree.highlights.enabled": false,
+    "todo-tree.regex.regex": "(//|#|%|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",
+    "cSpell.customDictionaries": {
+        "custom-dictionary-workspace": {
+            "name": "custom-dictionary-workspace",
+            "path": "${workspaceFolder:Master_Thesis}/.cspell/custom-dictionary-workspace.txt",
+            "addWords": true,
+            "scope": "workspace"
+        }
+    }
 }

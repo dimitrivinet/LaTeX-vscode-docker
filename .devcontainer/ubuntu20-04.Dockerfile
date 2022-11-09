@@ -1,17 +1,21 @@
-FROM alpine:3.16
+FROM ubuntu:20.04
 
 RUN : \
-    && apk add --no-cache \
-        bash make nano git procps curl perl \
-        biber \
-        texlive-full \
-        py3-pygments \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends --fix-missing \
+        locales \
+    && locale-gen en_US.UTF-8 \
+    && update-locale LANG=en_US.UTF-8 \
     && :
 
-# installing cpanm & missing latexindent dependencies
 RUN : \
-    && curl -L http://cpanmin.us | perl - --self-upgrade \
-    && cpanm Log::Dispatch::File YAML::Tiny File::HomeDir \
+    && apt-get update \
+    && DEBIAN_FRONTEND=noninteractive apt-get -y install --no-install-recommends --fix-missing \
+        bash make nano git procps curl perl wget \
+        biber \
+        texlive-full \
+        python3-pygments \
+    && rm -rf /var/lib/apt/lists/* \
     && :
 
 # https://code.visualstudio.com/remote/advancedcontainers/add-nonroot-user
