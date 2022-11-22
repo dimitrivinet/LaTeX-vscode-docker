@@ -5,7 +5,25 @@
     "latex-workshop.latex.outDir": "./output",
     "latex-workshop.view.pdf.viewer": "tab",
     "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "bash_script",
+            "command": "/bin/bash",
+            "args": [
+                "$workspaceDir/compile"
+            ],
+            "env": {}
+        }
+    ],
     "latex-workshop.latex.autoBuild.run": "never",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "custom script",
+            "tools": [
+                "bash_script"
+            ]
+        }
+    ],
     "todo-tree.tree.scanMode": "workspace",
     "todo-tree.highlights.enabled": false,
     "todo-tree.regex.regex": "(//|#|%|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)",

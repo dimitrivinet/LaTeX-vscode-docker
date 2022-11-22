@@ -1,12 +1,12 @@
 {
-    "name": "latex-env",
-    "extensions": [
+	"name": "latex-env",
+	"extensions": [
 		"james-yu.latex-workshop",
 		"actboy168.tasks",
 		"Gruntfuggly.todo-tree",
 		"streetsidesoftware.code-spell-checker"
 	],
-    // "dockerFile": "alpine.Dockerfile"
-    "dockerFile": "ubuntu20-04.Dockerfile",
+	// "dockerFile": "alpine.Dockerfile"
+	"dockerFile": "ubuntu20-04.Dockerfile",
 	"remoteUser": "vscode"
 }
